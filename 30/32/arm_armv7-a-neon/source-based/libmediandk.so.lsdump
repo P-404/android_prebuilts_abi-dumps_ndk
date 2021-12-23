@@ -289,15 +289,6 @@
   },
   {
    "alignment" : 1,
-   "linker_set_key" : "_ZTIA5121_h",
-   "name" : "unsigned char [5121]",
-   "referenced_type" : "_ZTIh",
-   "self_type" : "_ZTIA5121_h",
-   "size" : 5121,
-   "source_file" : "/system/core/liblog/include/log/log_read.h"
-  },
-  {
-   "alignment" : 1,
    "linker_set_key" : "_ZTIA53_c",
    "name" : "char [53]",
    "referenced_type" : "_ZTIc",
@@ -4186,23 +4177,6 @@
    "enum_fields" :
    [
     {
-     "enum_field_value" : 4098,
-     "name" : "AIMAGE_FORMAT_RAW_DEPTH"
-    }
-   ],
-   "linker_set_key" : "_ZTI22AIMAGE_PRIVATE_FORMATS",
-   "name" : "AIMAGE_PRIVATE_FORMATS",
-   "referenced_type" : "_ZTI22AIMAGE_PRIVATE_FORMATS",
-   "self_type" : "_ZTI22AIMAGE_PRIVATE_FORMATS",
-   "size" : 4,
-   "source_file" : "/frameworks/av/media/ndk/include/private/media/NdkImage.h",
-   "underlying_type" : "_ZTIj"
-  },
-  {
-   "alignment" : 4,
-   "enum_fields" :
-   [
-    {
      "enum_field_value" : 0,
      "name" : "ANATIVEWINDOW_TRANSFORM_IDENTITY"
     },
@@ -5496,7 +5470,7 @@
     }
    ],
    "linker_set_key" : "_ZTI25$AUDIO_GAIN_MODE_CHANNELS",
-   "name" : "(anonymous enum at system/media/audio/include/system/audio-base.h:468:1)",
+   "name" : "(anonymous enum at system/media/audio/include/system/audio-base.h:476:1)",
    "referenced_type" : "_ZTI25$AUDIO_GAIN_MODE_CHANNELS",
    "self_type" : "_ZTI25$AUDIO_GAIN_MODE_CHANNELS",
    "size" : 4,
@@ -5683,7 +5657,7 @@
     }
    ],
    "linker_set_key" : "_ZTI25$NATIVE_WINDOW_API_CAMERA",
-   "name" : "(anonymous enum at frameworks/native/libs/nativewindow/include/system/window.h:261:1)",
+   "name" : "(anonymous enum at frameworks/native/libs/nativewindow/include/system/window.h:262:1)",
    "referenced_type" : "_ZTI25$NATIVE_WINDOW_API_CAMERA",
    "self_type" : "_ZTI25$NATIVE_WINDOW_API_CAMERA",
    "size" : 4,
@@ -5946,7 +5920,7 @@
     }
    ],
    "linker_set_key" : "_ZTI26$NATIVE_WINDOW_FRAMEBUFFER",
-   "name" : "(anonymous enum at frameworks/native/libs/nativewindow/include/system/window.h:319:1)",
+   "name" : "(anonymous enum at frameworks/native/libs/nativewindow/include/system/window.h:320:1)",
    "referenced_type" : "_ZTI26$NATIVE_WINDOW_FRAMEBUFFER",
    "self_type" : "_ZTI26$NATIVE_WINDOW_FRAMEBUFFER",
    "size" : 4,
@@ -6498,7 +6472,7 @@
     }
    ],
    "linker_set_key" : "_ZTI31$AUDIO_PORT_CONFIG_CHANNEL_MASK",
-   "name" : "(anonymous enum at system/media/audio/include/system/audio-base.h:487:1)",
+   "name" : "(anonymous enum at system/media/audio/include/system/audio-base.h:495:1)",
    "referenced_type" : "_ZTI31$AUDIO_PORT_CONFIG_CHANNEL_MASK",
    "self_type" : "_ZTI31$AUDIO_PORT_CONFIG_CHANNEL_MASK",
    "size" : 4,
@@ -6696,6 +6670,10 @@
     {
      "enum_field_value" : 46,
      "name" : "NATIVE_WINDOW_GET_LAST_QUEUED_BUFFER"
+    },
+    {
+     "enum_field_value" : 47,
+     "name" : "NATIVE_WINDOW_SET_QUERY_INTERCEPTOR"
     }
    ],
    "linker_set_key" : "_ZTI31$NATIVE_WINDOW_ALLOCATE_BUFFERS",
@@ -6736,7 +6714,7 @@
     }
    ],
    "linker_set_key" : "_ZTI31$NATIVE_WINDOW_TRANSFORM_FLIP_H",
-   "name" : "(anonymous enum at frameworks/native/libs/nativewindow/include/system/window.h:282:1)",
+   "name" : "(anonymous enum at frameworks/native/libs/nativewindow/include/system/window.h:283:1)",
    "referenced_type" : "_ZTI31$NATIVE_WINDOW_TRANSFORM_FLIP_H",
    "self_type" : "_ZTI31$NATIVE_WINDOW_TRANSFORM_FLIP_H",
    "size" : 4,
@@ -6996,7 +6974,7 @@
     }
    ],
    "linker_set_key" : "_ZTI34$NATIVE_WINDOW_SCALING_MODE_FREEZE",
-   "name" : "(anonymous enum at frameworks/native/libs/nativewindow/include/system/window.h:300:1)",
+   "name" : "(anonymous enum at frameworks/native/libs/nativewindow/include/system/window.h:301:1)",
    "referenced_type" : "_ZTI34$NATIVE_WINDOW_SCALING_MODE_FREEZE",
    "self_type" : "_ZTI34$NATIVE_WINDOW_SCALING_MODE_FREEZE",
    "size" : 4,
@@ -7030,6 +7008,31 @@
    "self_type" : "_ZTI34audio_microphone_channel_mapping_t",
    "size" : 4,
    "source_file" : "/system/media/audio/include/system/audio.h",
+   "underlying_type" : "_ZTIj"
+  },
+  {
+   "alignment" : 4,
+   "enum_fields" :
+   [
+    {
+     "enum_field_value" : 0,
+     "name" : "AUDIO_ENCAPSULATION_METADATA_TYPE_NONE"
+    },
+    {
+     "enum_field_value" : 1,
+     "name" : "AUDIO_ENCAPSULATION_METADATA_TYPE_FRAMEWORK_TUNER"
+    },
+    {
+     "enum_field_value" : 2,
+     "name" : "AUDIO_ENCAPSULATION_METADATA_TYPE_DVB_AD_DESCRIPTOR"
+    }
+   ],
+   "linker_set_key" : "_ZTI35audio_encapsulation_metadata_type_t",
+   "name" : "audio_encapsulation_metadata_type_t",
+   "referenced_type" : "_ZTI35audio_encapsulation_metadata_type_t",
+   "self_type" : "_ZTI35audio_encapsulation_metadata_type_t",
+   "size" : 4,
+   "source_file" : "/system/media/audio/include/system/audio-base.h",
    "underlying_type" : "_ZTIj"
   },
   {
@@ -9444,7 +9447,7 @@
     }
    ],
    "linker_set_key" : "_ZTIN7android18trait_trivial_moveINS_7String8EE6$valueE",
-   "name" : "android::trait_trivial_move<String8>::(anonymous enum at system/core/libutils/include/utils/String8.h:242:1)",
+   "name" : "android::trait_trivial_move<String8>::(anonymous enum at system/core/libutils/include/utils/String8.h:234:1)",
    "referenced_type" : "_ZTIN7android18trait_trivial_moveINS_7String8EE6$valueE",
    "self_type" : "_ZTIN7android18trait_trivial_moveINS_7String8EE6$valueE",
    "size" : 4,
@@ -9461,7 +9464,7 @@
     }
    ],
    "linker_set_key" : "_ZTIN7android18trait_trivial_moveINS_8String16EE6$valueE",
-   "name" : "android::trait_trivial_move<String16>::(anonymous enum at system/core/libutils/include/utils/String16.h:197:1)",
+   "name" : "android::trait_trivial_move<String16>::(anonymous enum at system/core/libutils/include/utils/String16.h:187:1)",
    "referenced_type" : "_ZTIN7android18trait_trivial_moveINS_8String16EE6$valueE",
    "self_type" : "_ZTIN7android18trait_trivial_moveINS_8String16EE6$valueE",
    "size" : 4,
@@ -10134,6 +10137,42 @@
    "underlying_type" : "_ZTIj"
   },
   {
+   "access" : "protected",
+   "alignment" : 4,
+   "enum_fields" :
+   [
+    {
+     "enum_field_value" : 1,
+     "name" : "android::Surface::DEFAULT_FORMAT"
+    }
+   ],
+   "linker_set_key" : "_ZTIN7android7Surface15$DEFAULT_FORMATE",
+   "name" : "android::Surface::(anonymous enum at frameworks/native/libs/gui/include/gui/Surface.h:337:5)",
+   "referenced_type" : "_ZTIN7android7Surface15$DEFAULT_FORMATE",
+   "self_type" : "_ZTIN7android7Surface15$DEFAULT_FORMATE",
+   "size" : 4,
+   "source_file" : "/frameworks/native/libs/gui/include/gui/Surface.h",
+   "underlying_type" : "_ZTIj"
+  },
+  {
+   "access" : "protected",
+   "alignment" : 4,
+   "enum_fields" :
+   [
+    {
+     "enum_field_value" : 64,
+     "name" : "android::Surface::NUM_BUFFER_SLOTS"
+    }
+   ],
+   "linker_set_key" : "_ZTIN7android7Surface17$NUM_BUFFER_SLOTSE",
+   "name" : "android::Surface::(anonymous enum at frameworks/native/libs/gui/include/gui/Surface.h:336:5)",
+   "referenced_type" : "_ZTIN7android7Surface17$NUM_BUFFER_SLOTSE",
+   "self_type" : "_ZTIN7android7Surface17$NUM_BUFFER_SLOTSE",
+   "size" : 4,
+   "source_file" : "/frameworks/native/libs/gui/include/gui/Surface.h",
+   "underlying_type" : "_ZTIj"
+  },
+  {
    "alignment" : 4,
    "enum_fields" :
    [
@@ -10300,7 +10339,7 @@
     }
    ],
    "linker_set_key" : "_ZTIN7android7RefBase17$FIRST_INC_STRONGE",
-   "name" : "android::RefBase::(anonymous enum at system/core/libutils/include/utils/RefBase.h:313:5)",
+   "name" : "android::RefBase::(anonymous enum at system/core/libutils/include/utils/RefBase.h:318:5)",
    "referenced_type" : "_ZTIN7android7RefBase17$FIRST_INC_STRONGE",
    "self_type" : "_ZTIN7android7RefBase17$FIRST_INC_STRONGE",
    "size" : 4,
@@ -10326,28 +10365,11 @@
     }
    ],
    "linker_set_key" : "_ZTIN7android7RefBase21$OBJECT_LIFETIME_MASKE",
-   "name" : "android::RefBase::(anonymous enum at system/core/libutils/include/utils/RefBase.h:304:5)",
+   "name" : "android::RefBase::(anonymous enum at system/core/libutils/include/utils/RefBase.h:309:5)",
    "referenced_type" : "_ZTIN7android7RefBase21$OBJECT_LIFETIME_MASKE",
    "self_type" : "_ZTIN7android7RefBase21$OBJECT_LIFETIME_MASKE",
    "size" : 4,
    "source_file" : "/system/core/libutils/include/utils/RefBase.h",
-   "underlying_type" : "_ZTIj"
-  },
-  {
-   "alignment" : 4,
-   "enum_fields" :
-   [
-    {
-     "enum_field_value" : 0,
-     "name" : "android::String8::kEmptyString"
-    }
-   ],
-   "linker_set_key" : "_ZTIN7android7String813StaticLinkageE",
-   "name" : "android::String8::StaticLinkage",
-   "referenced_type" : "_ZTIN7android7String813StaticLinkageE",
-   "self_type" : "_ZTIN7android7String813StaticLinkageE",
-   "size" : 4,
-   "source_file" : "/system/core/libutils/include/utils/String8.h",
    "underlying_type" : "_ZTIj"
   },
   {
@@ -10361,7 +10383,7 @@
     }
    ],
    "linker_set_key" : "_ZTIN7android7Surface15$DEFAULT_FORMATE",
-   "name" : "android::Surface::(anonymous enum at frameworks/native/libs/gui/include/gui/Surface.h:337:5)",
+   "name" : "android::Surface::(anonymous enum at frameworks/native/libs/gui/include/gui/Surface.h:339:5)",
    "referenced_type" : "_ZTIN7android7Surface15$DEFAULT_FORMATE",
    "self_type" : "_ZTIN7android7Surface15$DEFAULT_FORMATE",
    "size" : 4,
@@ -10379,28 +10401,11 @@
     }
    ],
    "linker_set_key" : "_ZTIN7android7Surface17$NUM_BUFFER_SLOTSE",
-   "name" : "android::Surface::(anonymous enum at frameworks/native/libs/gui/include/gui/Surface.h:336:5)",
+   "name" : "android::Surface::(anonymous enum at frameworks/native/libs/gui/include/gui/Surface.h:338:5)",
    "referenced_type" : "_ZTIN7android7Surface17$NUM_BUFFER_SLOTSE",
    "self_type" : "_ZTIN7android7Surface17$NUM_BUFFER_SLOTSE",
    "size" : 4,
    "source_file" : "/frameworks/native/libs/gui/include/gui/Surface.h",
-   "underlying_type" : "_ZTIj"
-  },
-  {
-   "alignment" : 4,
-   "enum_fields" :
-   [
-    {
-     "enum_field_value" : 0,
-     "name" : "android::String16::kEmptyString"
-    }
-   ],
-   "linker_set_key" : "_ZTIN7android8String1613StaticLinkageE",
-   "name" : "android::String16::StaticLinkage",
-   "referenced_type" : "_ZTIN7android8String1613StaticLinkageE",
-   "self_type" : "_ZTIN7android8String1613StaticLinkageE",
-   "size" : 4,
-   "source_file" : "/system/core/libutils/include/utils/String16.h",
    "underlying_type" : "_ZTIj"
   },
   {
@@ -15711,6 +15716,33 @@
    "return_type" : "_ZTIi",
    "self_type" : "_ZTIFiPK11hw_module_tPKcjPP11hw_device_tE",
    "source_file" : "/hardware/libhardware/include/hardware/camera_common.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIFiPK13ANativeWindowPFiS1_iPiEPviS2_E",
+   "name" : "int (const ANativeWindow *, int (*)(const ANativeWindow *, int, int *), void *, int, int *)",
+   "parameters" :
+   [
+    {
+     "referenced_type" : "_ZTIPK13ANativeWindow"
+    },
+    {
+     "referenced_type" : "_ZTIPFiPK13ANativeWindowiPiE"
+    },
+    {
+     "referenced_type" : "_ZTIPv"
+    },
+    {
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "referenced_type" : "_ZTIPi"
+    }
+   ],
+   "referenced_type" : "_ZTIFiPK13ANativeWindowPFiS1_iPiEPviS2_E",
+   "return_type" : "_ZTIi",
+   "self_type" : "_ZTIFiPK13ANativeWindowPFiS1_iPiEPviS2_E",
+   "source_file" : "/frameworks/native/libs/gui/include/gui/Surface.h"
   },
   {
    "alignment" : 4,
@@ -22368,15 +22400,6 @@
   },
   {
    "alignment" : 4,
-   "linker_set_key" : "_ZTIRK7log_msg",
-   "name" : "const log_msg &",
-   "referenced_type" : "_ZTIK7log_msg",
-   "self_type" : "_ZTIRK7log_msg",
-   "size" : 4,
-   "source_file" : "/system/core/liblog/include/log/log_read.h"
-  },
-  {
-   "alignment" : 4,
    "linker_set_key" : "_ZTIRK8log_time",
    "name" : "const log_time &",
    "referenced_type" : "_ZTIK8log_time",
@@ -24403,15 +24426,6 @@
   },
   {
    "alignment" : 4,
-   "linker_set_key" : "_ZTIP7log_msg",
-   "name" : "log_msg *",
-   "referenced_type" : "_ZTI7log_msg",
-   "self_type" : "_ZTIP7log_msg",
-   "size" : 4,
-   "source_file" : "/system/core/liblog/include/log/log_read.h"
-  },
-  {
-   "alignment" : 4,
    "linker_set_key" : "_ZTIP8AIBinder",
    "name" : "AIBinder *",
    "referenced_type" : "_ZTI8AIBinder",
@@ -25768,6 +25782,15 @@
    "self_type" : "_ZTIPFiPK11hw_module_tPKcjPP11hw_device_tE",
    "size" : 4,
    "source_file" : "/hardware/libhardware/include/hardware/camera_common.h"
+  },
+  {
+   "alignment" : 4,
+   "linker_set_key" : "_ZTIPFiPK13ANativeWindowPFiS1_iPiEPviS2_E",
+   "name" : "int (*)(const ANativeWindow *, int (*)(const ANativeWindow *, int, int *), void *, int, int *)",
+   "referenced_type" : "_ZTIFiPK13ANativeWindowPFiS1_iPiEPviS2_E",
+   "self_type" : "_ZTIPFiPK13ANativeWindowPFiS1_iPiEPviS2_E",
+   "size" : 4,
+   "source_file" : "/frameworks/native/libs/gui/include/gui/Surface.h"
   },
   {
    "alignment" : 4,
@@ -27307,15 +27330,6 @@
    "self_type" : "_ZTIPK7AParcel",
    "size" : 4,
    "source_file" : "/frameworks/native/libs/binder/ndk/include_ndk/android/binder_interface_utils.h"
-  },
-  {
-   "alignment" : 4,
-   "linker_set_key" : "_ZTIPK7log_msg",
-   "name" : "const log_msg *",
-   "referenced_type" : "_ZTIK7log_msg",
-   "self_type" : "_ZTIPK7log_msg",
-   "size" : 4,
-   "source_file" : "/system/core/liblog/include/log/log_read.h"
   },
   {
    "alignment" : 4,
@@ -31714,16 +31728,6 @@
    "source_file" : "/frameworks/native/libs/binder/ndk/include_ndk/android/binder_interface_utils.h"
   },
   {
-   "alignment" : 4,
-   "is_const" : true,
-   "linker_set_key" : "_ZTIK7log_msg",
-   "name" : "const log_msg",
-   "referenced_type" : "_ZTI7log_msg",
-   "self_type" : "_ZTIK7log_msg",
-   "size" : 5124,
-   "source_file" : "/system/core/liblog/include/log/log_read.h"
-  },
-  {
    "alignment" : 1,
    "is_const" : true,
    "linker_set_key" : "_ZTIK8log_time",
@@ -34173,7 +34177,7 @@
    "name" : "audio_port",
    "referenced_type" : "_ZTI10audio_port",
    "self_type" : "_ZTI10audio_port",
-   "size" : 1308,
+   "size" : 1316,
    "source_file" : "/system/media/audio/include/system/audio.h"
   },
   {
@@ -34579,57 +34583,6 @@
    "self_type" : "_ZTI12audio_uuid_s",
    "size" : 16,
    "source_file" : "/system/media/audio/include/system/audio.h"
-  },
-  {
-   "alignment" : 4,
-   "fields" :
-   [
-    {
-     "field_name" : "len",
-     "referenced_type" : "_ZTIt"
-    },
-    {
-     "field_name" : "hdr_size",
-     "field_offset" : 16,
-     "referenced_type" : "_ZTIt"
-    },
-    {
-     "field_name" : "pid",
-     "field_offset" : 32,
-     "referenced_type" : "_ZTIi"
-    },
-    {
-     "field_name" : "tid",
-     "field_offset" : 64,
-     "referenced_type" : "_ZTIj"
-    },
-    {
-     "field_name" : "sec",
-     "field_offset" : 96,
-     "referenced_type" : "_ZTIj"
-    },
-    {
-     "field_name" : "nsec",
-     "field_offset" : 128,
-     "referenced_type" : "_ZTIj"
-    },
-    {
-     "field_name" : "lid",
-     "field_offset" : 160,
-     "referenced_type" : "_ZTIj"
-    },
-    {
-     "field_name" : "uid",
-     "field_offset" : 192,
-     "referenced_type" : "_ZTIj"
-    }
-   ],
-   "linker_set_key" : "_ZTI12logger_entry",
-   "name" : "logger_entry",
-   "referenced_type" : "_ZTI12logger_entry",
-   "self_type" : "_ZTI12logger_entry",
-   "size" : 28,
-   "source_file" : "/system/core/liblog/include/log/log_read.h"
   },
   {
    "alignment" : 4,
@@ -37765,13 +37718,23 @@
      "field_name" : "address",
      "field_offset" : 64,
      "referenced_type" : "_ZTIA32_c"
+    },
+    {
+     "field_name" : "encapsulation_modes",
+     "field_offset" : 320,
+     "referenced_type" : "_ZTIj"
+    },
+    {
+     "field_name" : "encapsulation_metadata_types",
+     "field_offset" : 352,
+     "referenced_type" : "_ZTIj"
     }
    ],
    "linker_set_key" : "_ZTI21audio_port_device_ext",
    "name" : "audio_port_device_ext",
    "referenced_type" : "_ZTI21audio_port_device_ext",
    "self_type" : "_ZTI21audio_port_device_ext",
-   "size" : 40,
+   "size" : 48,
    "source_file" : "/system/media/audio/include/system/audio.h"
   },
   {
@@ -38693,21 +38656,6 @@
    "fields" :
    [
     {
-     "referenced_type" : "_ZTIN7log_msgUt_E"
-    }
-   ],
-   "linker_set_key" : "_ZTI7log_msg",
-   "name" : "log_msg",
-   "referenced_type" : "_ZTI7log_msg",
-   "self_type" : "_ZTI7log_msg",
-   "size" : 5124,
-   "source_file" : "/system/core/liblog/include/log/log_read.h"
-  },
-  {
-   "alignment" : 4,
-   "fields" :
-   [
-    {
      "field_name" : "numentries",
      "referenced_type" : "_ZTIj"
     },
@@ -38816,11 +38764,11 @@
    ],
    "is_anonymous" : true,
    "linker_set_key" : "_ZTIN10audio_portUt_E",
-   "name" : "audio_port::(anonymous union at system/media/audio/include/system/audio.h:562:5)",
+   "name" : "audio_port::(anonymous union at system/media/audio/include/system/audio.h:566:5)",
    "record_kind" : "union",
    "referenced_type" : "_ZTIN10audio_portUt_E",
    "self_type" : "_ZTIN10audio_portUt_E",
-   "size" : 40,
+   "size" : 48,
    "source_file" : "/system/media/audio/include/system/audio.h"
   },
   {
@@ -40196,6 +40144,10 @@
     {
      "is_pure" : true,
      "mangled_component_name" : "_ZN7android12IMediaPlayer13setDataSourceERKNS_2spINS_11IDataSourceEEE"
+    },
+    {
+     "is_pure" : true,
+     "mangled_component_name" : "_ZN7android12IMediaPlayer13setDataSourceERKNS_7String8E"
     },
     {
      "is_pure" : true,
@@ -55197,152 +55149,164 @@
     },
     {
      "access" : "protected",
-     "field_name" : "mLockedBuffer",
+     "field_name" : "mQueryInterceptor",
      "field_offset" : 47648,
+     "referenced_type" : "_ZTIPFiPK13ANativeWindowPFiS1_iPiEPviS2_E"
+    },
+    {
+     "access" : "protected",
+     "field_name" : "mQueryInterceptorData",
+     "field_offset" : 47680,
+     "referenced_type" : "_ZTIPv"
+    },
+    {
+     "access" : "protected",
+     "field_name" : "mLockedBuffer",
+     "field_offset" : 47712,
      "referenced_type" : "_ZTIN7android2spINS_13GraphicBufferEEE"
     },
     {
      "access" : "protected",
      "field_name" : "mPostedBuffer",
-     "field_offset" : 47680,
+     "field_offset" : 47744,
      "referenced_type" : "_ZTIN7android2spINS_13GraphicBufferEEE"
     },
     {
      "access" : "protected",
      "field_name" : "mConnectedToCpu",
-     "field_offset" : 47712,
+     "field_offset" : 47776,
      "referenced_type" : "_ZTIb"
     },
     {
      "access" : "protected",
      "field_name" : "mDirtyRegion",
-     "field_offset" : 47744,
+     "field_offset" : 47808,
      "referenced_type" : "_ZTIN7android6RegionE"
     },
     {
      "access" : "protected",
      "field_name" : "mBufferAge",
-     "field_offset" : 48448,
+     "field_offset" : 48512,
      "referenced_type" : "_ZTIy"
     },
     {
      "access" : "protected",
      "field_name" : "mGenerationNumber",
-     "field_offset" : 48512,
+     "field_offset" : 48576,
      "referenced_type" : "_ZTIj"
     },
     {
      "access" : "protected",
      "field_name" : "mSharedBufferMode",
-     "field_offset" : 48544,
-     "referenced_type" : "_ZTIb"
-    },
-    {
-     "access" : "protected",
-     "field_name" : "mAutoRefresh",
-     "field_offset" : 48552,
-     "referenced_type" : "_ZTIb"
-    },
-    {
-     "access" : "protected",
-     "field_name" : "mAutoPrerotation",
-     "field_offset" : 48560,
-     "referenced_type" : "_ZTIb"
-    },
-    {
-     "access" : "protected",
-     "field_name" : "mSharedBufferSlot",
-     "field_offset" : 48576,
-     "referenced_type" : "_ZTIi"
-    },
-    {
-     "access" : "protected",
-     "field_name" : "mSharedBufferHasBeenQueued",
      "field_offset" : 48608,
      "referenced_type" : "_ZTIb"
     },
     {
      "access" : "protected",
-     "field_name" : "mLastDequeueDuration",
-     "field_offset" : 48640,
-     "referenced_type" : "_ZTIx"
+     "field_name" : "mAutoRefresh",
+     "field_offset" : 48616,
+     "referenced_type" : "_ZTIb"
     },
     {
      "access" : "protected",
-     "field_name" : "mLastQueueDuration",
+     "field_name" : "mAutoPrerotation",
+     "field_offset" : 48624,
+     "referenced_type" : "_ZTIb"
+    },
+    {
+     "access" : "protected",
+     "field_name" : "mSharedBufferSlot",
+     "field_offset" : 48640,
+     "referenced_type" : "_ZTIi"
+    },
+    {
+     "access" : "protected",
+     "field_name" : "mSharedBufferHasBeenQueued",
+     "field_offset" : 48672,
+     "referenced_type" : "_ZTIb"
+    },
+    {
+     "access" : "protected",
+     "field_name" : "mLastDequeueDuration",
      "field_offset" : 48704,
      "referenced_type" : "_ZTIx"
     },
     {
      "access" : "protected",
-     "field_name" : "mLastDequeueStartTime",
+     "field_name" : "mLastQueueDuration",
      "field_offset" : 48768,
      "referenced_type" : "_ZTIx"
     },
     {
      "access" : "protected",
-     "field_name" : "mQueueBufferCondition",
+     "field_name" : "mLastDequeueStartTime",
      "field_offset" : 48832,
+     "referenced_type" : "_ZTIx"
+    },
+    {
+     "access" : "protected",
+     "field_name" : "mQueueBufferCondition",
+     "field_offset" : 48896,
      "referenced_type" : "_ZTIN7android9ConditionE"
     },
     {
      "access" : "protected",
      "field_name" : "mNextFrameNumber",
-     "field_offset" : 48896,
-     "referenced_type" : "_ZTIy"
-    },
-    {
-     "access" : "protected",
-     "field_name" : "mLastFrameNumber",
      "field_offset" : 48960,
      "referenced_type" : "_ZTIy"
     },
     {
      "access" : "protected",
-     "field_name" : "mQueriedSupportedTimestamps",
+     "field_name" : "mLastFrameNumber",
      "field_offset" : 49024,
-     "referenced_type" : "_ZTIb"
+     "referenced_type" : "_ZTIy"
     },
     {
      "access" : "protected",
-     "field_name" : "mFrameTimestampsSupportsPresent",
-     "field_offset" : 49032,
-     "referenced_type" : "_ZTIb"
-    },
-    {
-     "access" : "protected",
-     "field_name" : "mEnableFrameTimestamps",
-     "field_offset" : 49040,
-     "referenced_type" : "_ZTIb"
-    },
-    {
-     "access" : "protected",
-     "field_name" : "mFrameEventHistory",
-     "field_offset" : 49056,
-     "referenced_type" : "_ZTINSt3__110unique_ptrIN7android25ProducerFrameEventHistoryENS_14default_deleteIS2_EEEE"
-    },
-    {
-     "access" : "protected",
-     "field_name" : "mReportRemovedBuffers",
+     "field_name" : "mQueriedSupportedTimestamps",
      "field_offset" : 49088,
      "referenced_type" : "_ZTIb"
     },
     {
      "access" : "protected",
-     "field_name" : "mRemovedBuffers",
+     "field_name" : "mFrameTimestampsSupportsPresent",
+     "field_offset" : 49096,
+     "referenced_type" : "_ZTIb"
+    },
+    {
+     "access" : "protected",
+     "field_name" : "mEnableFrameTimestamps",
+     "field_offset" : 49104,
+     "referenced_type" : "_ZTIb"
+    },
+    {
+     "access" : "protected",
+     "field_name" : "mFrameEventHistory",
      "field_offset" : 49120,
+     "referenced_type" : "_ZTINSt3__110unique_ptrIN7android25ProducerFrameEventHistoryENS_14default_deleteIS2_EEEE"
+    },
+    {
+     "access" : "protected",
+     "field_name" : "mReportRemovedBuffers",
+     "field_offset" : 49152,
+     "referenced_type" : "_ZTIb"
+    },
+    {
+     "access" : "protected",
+     "field_name" : "mRemovedBuffers",
+     "field_offset" : 49184,
      "referenced_type" : "_ZTINSt3__16vectorIN7android2spINS1_13GraphicBufferEEENS_9allocatorIS4_EEEE"
     },
     {
      "access" : "protected",
      "field_name" : "mMaxBufferCount",
-     "field_offset" : 49216,
+     "field_offset" : 49280,
      "referenced_type" : "_ZTIi"
     },
     {
      "access" : "protected",
      "field_name" : "mListenerProxy",
-     "field_offset" : 49248,
+     "field_offset" : 49312,
      "referenced_type" : "_ZTIN7android2spINS_17IProducerListenerEEE"
     }
    ],
@@ -55351,7 +55315,7 @@
    "record_kind" : "class",
    "referenced_type" : "_ZTIN7android7SurfaceE",
    "self_type" : "_ZTIN7android7SurfaceE",
-   "size" : 6160,
+   "size" : 6168,
    "source_file" : "/frameworks/native/libs/gui/include/gui/Surface.h",
    "vtable_components" :
    [
@@ -58496,28 +58460,6 @@
    "size" : 1,
    "source_file" : "/system/core/libutils/include/utils/Singleton.h",
    "template_args" : [ "_ZTIN7android19GraphicBufferMapperE" ]
-  },
-  {
-   "alignment" : 4,
-   "fields" :
-   [
-    {
-     "field_name" : "buf",
-     "referenced_type" : "_ZTIA5121_h"
-    },
-    {
-     "field_name" : "entry",
-     "referenced_type" : "_ZTI12logger_entry"
-    }
-   ],
-   "is_anonymous" : true,
-   "linker_set_key" : "_ZTIN7log_msgUt_E",
-   "name" : "log_msg::(anonymous union at system/core/liblog/include/log/log_read.h:77:3)",
-   "record_kind" : "union",
-   "referenced_type" : "_ZTIN7log_msgUt_E",
-   "self_type" : "_ZTIN7log_msgUt_E",
-   "size" : 5124,
-   "source_file" : "/system/core/liblog/include/log/log_read.h"
   },
   {
    "alignment" : 4,

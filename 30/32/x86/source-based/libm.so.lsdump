@@ -8,7 +8,7 @@
    "referenced_type" : "_ZTIc",
    "self_type" : "_ZTIA10_c",
    "size" : 10,
-   "source_file" : "/bionic/libm/upstream-freebsd/lib/msun/src/s_modf.c"
+   "source_file" : "/bionic/libm/upstream-freebsd/lib/msun/src/w_cabsf.c"
   },
   {
    "alignment" : 4,
@@ -40,7 +40,7 @@
   {
    "alignment" : 4,
    "linker_set_key" : "_ZTIA128_N12pow_log_dataUt_E",
-   "name" : "pow_log_data::(anonymous struct at /external/arm-optimized-routines/math/math_config.h:411:3) [128]",
+   "name" : "pow_log_data::(anonymous struct at /external/arm-optimized-routines/math/math_config.h:416:3) [128]",
    "referenced_type" : "_ZTIN12pow_log_dataUt_E",
    "self_type" : "_ZTIA128_N12pow_log_dataUt_E",
    "size" : 4096,
@@ -49,7 +49,7 @@
   {
    "alignment" : 4,
    "linker_set_key" : "_ZTIA128_N8log_dataUt_E",
-   "name" : "log_data::(anonymous struct at /external/arm-optimized-routines/math/math_config.h:382:3) [128]",
+   "name" : "log_data::(anonymous struct at /external/arm-optimized-routines/math/math_config.h:387:3) [128]",
    "referenced_type" : "_ZTIN8log_dataUt_E",
    "self_type" : "_ZTIA128_N8log_dataUt_E",
    "size" : 2048,
@@ -67,7 +67,7 @@
   {
    "alignment" : 4,
    "linker_set_key" : "_ZTIA16_N10log2f_dataUt_E",
-   "name" : "log2f_data::(anonymous struct at /external/arm-optimized-routines/math/math_config.h:326:3) [16]",
+   "name" : "log2f_data::(anonymous struct at /external/arm-optimized-routines/math/math_config.h:331:3) [16]",
    "referenced_type" : "_ZTIN10log2f_dataUt_E",
    "self_type" : "_ZTIA16_N10log2f_dataUt_E",
    "size" : 256,
@@ -76,7 +76,7 @@
   {
    "alignment" : 4,
    "linker_set_key" : "_ZTIA16_N14powf_log2_dataUt_E",
-   "name" : "powf_log2_data::(anonymous struct at /external/arm-optimized-routines/math/math_config.h:343:3) [16]",
+   "name" : "powf_log2_data::(anonymous struct at /external/arm-optimized-routines/math/math_config.h:348:3) [16]",
    "referenced_type" : "_ZTIN14powf_log2_dataUt_E",
    "self_type" : "_ZTIA16_N14powf_log2_dataUt_E",
    "size" : 256,
@@ -85,7 +85,7 @@
   {
    "alignment" : 4,
    "linker_set_key" : "_ZTIA16_N9logf_dataUt_E",
-   "name" : "logf_data::(anonymous struct at /external/arm-optimized-routines/math/math_config.h:314:3) [16]",
+   "name" : "logf_data::(anonymous struct at /external/arm-optimized-routines/math/math_config.h:319:3) [16]",
    "referenced_type" : "_ZTIN9logf_dataUt_E",
    "self_type" : "_ZTIA16_N9logf_dataUt_E",
    "size" : 256,
@@ -242,7 +242,7 @@
    "referenced_type" : "_ZTId",
    "self_type" : "_ZTIA5_d",
    "size" : 40,
-   "source_file" : "/bionic/libm/upstream-freebsd/lib/msun/src/e_j0.c"
+   "source_file" : "/external/arm-optimized-routines/math/math_config.h"
   },
   {
    "alignment" : 4,
@@ -256,7 +256,7 @@
   {
    "alignment" : 4,
    "linker_set_key" : "_ZTIA64_N9log2_dataUt_E",
-   "name" : "log2_data::(anonymous struct at /external/arm-optimized-routines/math/math_config.h:397:3) [64]",
+   "name" : "log2_data::(anonymous struct at /external/arm-optimized-routines/math/math_config.h:402:3) [64]",
    "referenced_type" : "_ZTIN9log2_dataUt_E",
    "self_type" : "_ZTIA64_N9log2_dataUt_E",
    "size" : 1024,
@@ -4440,7 +4440,7 @@
    "referenced_type" : "_ZTId",
    "self_type" : "_ZTIKd",
    "size" : 8,
-   "source_file" : "/bionic/libm/upstream-freebsd/lib/msun/src/s_lround.c"
+   "source_file" : "/bionic/libm/upstream-freebsd/lib/msun/src/s_scalbn.c"
   },
   {
    "alignment" : 4,
@@ -4460,7 +4460,7 @@
    "referenced_type" : "_ZTIf",
    "self_type" : "_ZTIKf",
    "size" : 4,
-   "source_file" : "/bionic/libm/upstream-freebsd/lib/msun/src/s_lround.c"
+   "source_file" : "/bionic/libm/upstream-freebsd/lib/msun/src/s_tanhf.c"
   },
   {
    "alignment" : 4,
@@ -4502,7 +4502,7 @@
    "referenced_type" : "_ZTIf",
    "self_type" : "_ZTIVKf",
    "size" : 4,
-   "source_file" : "/bionic/libm/upstream-freebsd/lib/msun/src/catrig.c"
+   "source_file" : "/bionic/libm/upstream-freebsd/lib/msun/src/s_tanhf.c"
   },
   {
    "alignment" : 4,
@@ -4640,7 +4640,7 @@
    "referenced_type" : "_ZTI11max_align_t",
    "self_type" : "_ZTI11max_align_t",
    "size" : 16,
-   "source_file" : "/prebuilts/clang-tools/linux-x86/lib64/clang/10.0.5/include/__stddef_max_align_t.h"
+   "source_file" : "/prebuilts/clang-tools/linux-x86/lib64/clang/11.0.1/include/__stddef_max_align_t.h"
   },
   {
    "alignment" : 4,
@@ -5364,7 +5364,7 @@
    ],
    "is_anonymous" : true,
    "linker_set_key" : "_ZTIN10log2f_dataUt_E",
-   "name" : "log2f_data::(anonymous struct at /external/arm-optimized-routines/math/math_config.h:326:3)",
+   "name" : "log2f_data::(anonymous struct at /external/arm-optimized-routines/math/math_config.h:331:3)",
    "referenced_type" : "_ZTIN10log2f_dataUt_E",
    "self_type" : "_ZTIN10log2f_dataUt_E",
    "size" : 16,
@@ -5396,7 +5396,7 @@
    ],
    "is_anonymous" : true,
    "linker_set_key" : "_ZTIN12pow_log_dataUt_E",
-   "name" : "pow_log_data::(anonymous struct at /external/arm-optimized-routines/math/math_config.h:411:3)",
+   "name" : "pow_log_data::(anonymous struct at /external/arm-optimized-routines/math/math_config.h:416:3)",
    "referenced_type" : "_ZTIN12pow_log_dataUt_E",
    "self_type" : "_ZTIN12pow_log_dataUt_E",
    "size" : 32,
@@ -5418,7 +5418,7 @@
    ],
    "is_anonymous" : true,
    "linker_set_key" : "_ZTIN14powf_log2_dataUt_E",
-   "name" : "powf_log2_data::(anonymous struct at /external/arm-optimized-routines/math/math_config.h:343:3)",
+   "name" : "powf_log2_data::(anonymous struct at /external/arm-optimized-routines/math/math_config.h:348:3)",
    "referenced_type" : "_ZTIN14powf_log2_dataUt_E",
    "self_type" : "_ZTIN14powf_log2_dataUt_E",
    "size" : 16,
@@ -5494,7 +5494,7 @@
    ],
    "is_anonymous" : true,
    "linker_set_key" : "_ZTIN8log_dataUt_E",
-   "name" : "log_data::(anonymous struct at /external/arm-optimized-routines/math/math_config.h:382:3)",
+   "name" : "log_data::(anonymous struct at /external/arm-optimized-routines/math/math_config.h:387:3)",
    "referenced_type" : "_ZTIN8log_dataUt_E",
    "self_type" : "_ZTIN8log_dataUt_E",
    "size" : 16,
@@ -5516,7 +5516,7 @@
    ],
    "is_anonymous" : true,
    "linker_set_key" : "_ZTIN9log2_dataUt_E",
-   "name" : "log2_data::(anonymous struct at /external/arm-optimized-routines/math/math_config.h:397:3)",
+   "name" : "log2_data::(anonymous struct at /external/arm-optimized-routines/math/math_config.h:402:3)",
    "referenced_type" : "_ZTIN9log2_dataUt_E",
    "self_type" : "_ZTIN9log2_dataUt_E",
    "size" : 16,
@@ -5538,7 +5538,7 @@
    ],
    "is_anonymous" : true,
    "linker_set_key" : "_ZTIN9logf_dataUt_E",
-   "name" : "logf_data::(anonymous struct at /external/arm-optimized-routines/math/math_config.h:314:3)",
+   "name" : "logf_data::(anonymous struct at /external/arm-optimized-routines/math/math_config.h:319:3)",
    "referenced_type" : "_ZTIN9logf_dataUt_E",
    "self_type" : "_ZTIN9logf_dataUt_E",
    "size" : 16,

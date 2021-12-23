@@ -78,6 +78,15 @@
    "size" : 1
   },
   {
+   "alignment" : 1,
+   "is_integral" : true,
+   "linker_set_key" : "_ZTIc",
+   "name" : "char",
+   "referenced_type" : "_ZTIc",
+   "self_type" : "_ZTIc",
+   "size" : 1
+  },
+  {
    "alignment" : 4,
    "linker_set_key" : "_ZTIf",
    "name" : "float",
@@ -111,7 +120,7 @@
    "self_type" : "_ZTIv"
   },
   {
-   "alignment" : 8,
+   "alignment" : 4,
    "is_integral" : true,
    "linker_set_key" : "_ZTIx",
    "name" : "long long",
@@ -120,7 +129,7 @@
    "size" : 8
   },
   {
-   "alignment" : 8,
+   "alignment" : 4,
    "is_integral" : true,
    "is_unsigned" : true,
    "linker_set_key" : "_ZTIy",
@@ -448,6 +457,9 @@
    "name" : "AInputEvent_getType"
   },
   {
+   "name" : "AInputEvent_release"
+  },
+  {
    "name" : "AInputQueue_attachLooper"
   },
   {
@@ -464,6 +476,9 @@
   },
   {
    "name" : "AInputQueue_preDispatchEvent"
+  },
+  {
+   "name" : "AKeyEvent_fromJava"
   },
   {
    "name" : "AKeyEvent_getAction"
@@ -515,6 +530,9 @@
   },
   {
    "name" : "ALooper_wake"
+  },
+  {
+   "name" : "AMotionEvent_fromJava"
   },
   {
    "name" : "AMotionEvent_getAction"
@@ -1300,7 +1318,7 @@
     }
    ],
    "linker_set_key" : "_ZTI25$NATIVE_WINDOW_API_CAMERA",
-   "name" : "(anonymous enum at frameworks/native/libs/nativewindow/include/system/window.h:261:1)",
+   "name" : "(anonymous enum at frameworks/native/libs/nativewindow/include/system/window.h:262:1)",
    "referenced_type" : "_ZTI25$NATIVE_WINDOW_API_CAMERA",
    "self_type" : "_ZTI25$NATIVE_WINDOW_API_CAMERA",
    "size" : 4,
@@ -1422,7 +1440,7 @@
     }
    ],
    "linker_set_key" : "_ZTI26$NATIVE_WINDOW_FRAMEBUFFER",
-   "name" : "(anonymous enum at frameworks/native/libs/nativewindow/include/system/window.h:319:1)",
+   "name" : "(anonymous enum at frameworks/native/libs/nativewindow/include/system/window.h:320:1)",
    "referenced_type" : "_ZTI26$NATIVE_WINDOW_FRAMEBUFFER",
    "self_type" : "_ZTI26$NATIVE_WINDOW_FRAMEBUFFER",
    "size" : 4,
@@ -1430,7 +1448,7 @@
    "underlying_type" : "_ZTIj"
   },
   {
-   "alignment" : 8,
+   "alignment" : 4,
    "enum_fields" :
    [
     {
@@ -1810,6 +1828,10 @@
     {
      "enum_field_value" : 46,
      "name" : "NATIVE_WINDOW_GET_LAST_QUEUED_BUFFER"
+    },
+    {
+     "enum_field_value" : 47,
+     "name" : "NATIVE_WINDOW_SET_QUERY_INTERCEPTOR"
     }
    ],
    "linker_set_key" : "_ZTI31$NATIVE_WINDOW_ALLOCATE_BUFFERS",
@@ -1850,7 +1872,7 @@
     }
    ],
    "linker_set_key" : "_ZTI31$NATIVE_WINDOW_TRANSFORM_FLIP_H",
-   "name" : "(anonymous enum at frameworks/native/libs/nativewindow/include/system/window.h:282:1)",
+   "name" : "(anonymous enum at frameworks/native/libs/nativewindow/include/system/window.h:283:1)",
    "referenced_type" : "_ZTI31$NATIVE_WINDOW_TRANSFORM_FLIP_H",
    "self_type" : "_ZTI31$NATIVE_WINDOW_TRANSFORM_FLIP_H",
    "size" : 4,
@@ -1879,7 +1901,7 @@
     }
    ],
    "linker_set_key" : "_ZTI34$NATIVE_WINDOW_SCALING_MODE_FREEZE",
-   "name" : "(anonymous enum at frameworks/native/libs/nativewindow/include/system/window.h:300:1)",
+   "name" : "(anonymous enum at frameworks/native/libs/nativewindow/include/system/window.h:301:1)",
    "referenced_type" : "_ZTI34$NATIVE_WINDOW_SCALING_MODE_FREEZE",
    "self_type" : "_ZTI34$NATIVE_WINDOW_SCALING_MODE_FREEZE",
    "size" : 4,
@@ -2066,15 +2088,15 @@
   },
   {
    "alignment" : 4,
-   "linker_set_key" : "_ZTIFiP13ANativeWindowPFiS0_iSt9__va_listEPviS1_E",
-   "name" : "int (ANativeWindow *, int (*)(ANativeWindow *, int, std::__va_list), void *, int, std::__va_list)",
+   "linker_set_key" : "_ZTIFiP13ANativeWindowPFiS0_iPcEPviS1_E",
+   "name" : "int (ANativeWindow *, int (*)(ANativeWindow *, int, char *), void *, int, char *)",
    "parameters" :
    [
     {
      "referenced_type" : "_ZTIP13ANativeWindow"
     },
     {
-     "referenced_type" : "_ZTIPFiP13ANativeWindowiSt9__va_listE"
+     "referenced_type" : "_ZTIPFiP13ANativeWindowiPcE"
     },
     {
      "referenced_type" : "_ZTIPv"
@@ -2083,12 +2105,12 @@
      "referenced_type" : "_ZTIi"
     },
     {
-     "referenced_type" : "_ZTISt9__va_list"
+     "referenced_type" : "_ZTIPc"
     }
    ],
-   "referenced_type" : "_ZTIFiP13ANativeWindowPFiS0_iSt9__va_listEPviS1_E",
+   "referenced_type" : "_ZTIFiP13ANativeWindowPFiS0_iPcEPviS1_E",
    "return_type" : "_ZTIi",
-   "self_type" : "_ZTIFiP13ANativeWindowPFiS0_iSt9__va_listEPviS1_E",
+   "self_type" : "_ZTIFiP13ANativeWindowPFiS0_iPcEPviS1_E",
    "source_file" : "/frameworks/native/libs/nativewindow/include/apex/window.h"
   },
   {
@@ -2150,8 +2172,8 @@
   },
   {
    "alignment" : 4,
-   "linker_set_key" : "_ZTIFiP13ANativeWindowiSt9__va_listE",
-   "name" : "int (ANativeWindow *, int, std::__va_list)",
+   "linker_set_key" : "_ZTIFiP13ANativeWindowiPcE",
+   "name" : "int (ANativeWindow *, int, char *)",
    "parameters" :
    [
     {
@@ -2161,12 +2183,12 @@
      "referenced_type" : "_ZTIi"
     },
     {
-     "referenced_type" : "_ZTISt9__va_list"
+     "referenced_type" : "_ZTIPc"
     }
    ],
-   "referenced_type" : "_ZTIFiP13ANativeWindowiSt9__va_listE",
+   "referenced_type" : "_ZTIFiP13ANativeWindowiPcE",
    "return_type" : "_ZTIi",
-   "self_type" : "_ZTIFiP13ANativeWindowiSt9__va_listE",
+   "self_type" : "_ZTIFiP13ANativeWindowiPcE",
    "source_file" : "/frameworks/native/libs/nativewindow/include/apex/window.h"
   },
   {
@@ -2653,10 +2675,10 @@
   },
   {
    "alignment" : 4,
-   "linker_set_key" : "_ZTIPFiP13ANativeWindowPFiS0_iSt9__va_listEPviS1_E",
-   "name" : "int (*)(ANativeWindow *, int (*)(ANativeWindow *, int, std::__va_list), void *, int, std::__va_list)",
-   "referenced_type" : "_ZTIFiP13ANativeWindowPFiS0_iSt9__va_listEPviS1_E",
-   "self_type" : "_ZTIPFiP13ANativeWindowPFiS0_iSt9__va_listEPviS1_E",
+   "linker_set_key" : "_ZTIPFiP13ANativeWindowPFiS0_iPcEPviS1_E",
+   "name" : "int (*)(ANativeWindow *, int (*)(ANativeWindow *, int, char *), void *, int, char *)",
+   "referenced_type" : "_ZTIFiP13ANativeWindowPFiS0_iPcEPviS1_E",
+   "self_type" : "_ZTIPFiP13ANativeWindowPFiS0_iPcEPviS1_E",
    "size" : 4,
    "source_file" : "/frameworks/native/libs/nativewindow/include/apex/window.h"
   },
@@ -2689,10 +2711,10 @@
   },
   {
    "alignment" : 4,
-   "linker_set_key" : "_ZTIPFiP13ANativeWindowiSt9__va_listE",
-   "name" : "int (*)(ANativeWindow *, int, std::__va_list)",
-   "referenced_type" : "_ZTIFiP13ANativeWindowiSt9__va_listE",
-   "self_type" : "_ZTIPFiP13ANativeWindowiSt9__va_listE",
+   "linker_set_key" : "_ZTIPFiP13ANativeWindowiPcE",
+   "name" : "int (*)(ANativeWindow *, int, char *)",
+   "referenced_type" : "_ZTIFiP13ANativeWindowiPcE",
+   "self_type" : "_ZTIPFiP13ANativeWindowiPcE",
    "size" : 4,
    "source_file" : "/frameworks/native/libs/nativewindow/include/apex/window.h"
   },
@@ -2833,6 +2855,15 @@
   },
   {
    "alignment" : 4,
+   "linker_set_key" : "_ZTIPc",
+   "name" : "char *",
+   "referenced_type" : "_ZTIc",
+   "self_type" : "_ZTIPc",
+   "size" : 4,
+   "source_file" : "/frameworks/native/libs/nativewindow/include/apex/window.h"
+  },
+  {
+   "alignment" : 4,
    "linker_set_key" : "_ZTIPf",
    "name" : "float *",
    "referenced_type" : "_ZTIf",
@@ -2890,7 +2921,7 @@
    "source_file" : "/frameworks/native/libs/nativewindow/include/android/hardware_buffer.h"
   },
   {
-   "alignment" : 8,
+   "alignment" : 4,
    "is_const" : true,
    "linker_set_key" : "_ZTIK19ANativeWindowBuffer",
    "name" : "const ANativeWindowBuffer",
@@ -2900,7 +2931,7 @@
    "source_file" : "/frameworks/native/libs/nativebase/include/nativebase/nativebase.h"
   },
   {
-   "alignment" : 8,
+   "alignment" : 4,
    "is_const" : true,
    "linker_set_key" : "_ZTIK20AHardwareBuffer_Desc",
    "name" : "const AHardwareBuffer_Desc",
@@ -2920,13 +2951,13 @@
    "source_file" : "/frameworks/native/libs/nativewindow/include/android/hardware_buffer.h"
   },
   {
-   "alignment" : 8,
+   "alignment" : 4,
    "is_const" : true,
    "linker_set_key" : "_ZTIKN7android13GraphicBufferE",
    "name" : "const android::GraphicBuffer",
    "referenced_type" : "_ZTIN7android13GraphicBufferE",
    "self_type" : "_ZTIKN7android13GraphicBufferE",
-   "size" : 152,
+   "size" : 148,
    "source_file" : "/frameworks/native/libs/nativewindow/include-private/private/android/AHardwareBufferHelpers.h"
   },
   {
@@ -2968,7 +2999,7 @@
    "source_file" : "/frameworks/native/libs/nativebase/include/nativebase/nativebase.h"
   },
   {
-   "alignment" : 8,
+   "alignment" : 4,
    "is_const" : true,
    "linker_set_key" : "_ZTIKx",
    "name" : "const long long",
@@ -3077,7 +3108,7 @@
    "source_file" : "/frameworks/native/libs/nativewindow/include/system/window.h"
   },
   {
-   "alignment" : 8,
+   "alignment" : 4,
    "fields" :
    [
     {
@@ -3143,7 +3174,7 @@
    "source_file" : "/frameworks/native/libs/nativebase/include/nativebase/nativebase.h"
   },
   {
-   "alignment" : 8,
+   "alignment" : 4,
    "fields" :
    [
     {
